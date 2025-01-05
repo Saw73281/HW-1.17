@@ -20,7 +20,6 @@ class NoteServiceTest {
 
     @BeforeEach
     void setUp() {
-        // Створюємо mock NoteRepository
         noteRepository = Mockito.mock(NoteRepository.class);
         noteService = new NoteService(noteRepository);
     }
